@@ -1,5 +1,5 @@
-# styleguide-scaffold
-A simple layout for a styleguide
+# <%= projectNameFileName %>
+<%= projectDescription %>
 
 ## Prerequisites
 * Git installed on command line
@@ -27,15 +27,12 @@ The following coding standards should be used for this project:
 ## Cartridge
 
 This project uses [Cartridge](https://github.com/cartridge/cartridge), a set of modules that makes up the Code Computerlove gulp setup.
-This project was created with Cartridge cli, using version 0.0.4 of cartridge on 18/04/2016
+This project was created with Cartridge cli, using version <%= currentVersion %> of cartridge on <%= projectGeneratedDate %>
 
 ### Modules
 The following Cartridge modules are used in this project
 
 [//]: <> (Modules start)
-Module | Version | Repo
------- | ------- | -----
-cartridge-javascript | 0.3.0 | https://github.com/cartridge/cartridge-javascriptcartridge-sass | 0.2.2 | https://github.com/cartridge/cartridge-sasscartridge-node-server | 0.0.1 | https://github.com/cartridge/cartridge-node-server
 [//]: <> (Modules end)
 
 ### Adding modules
