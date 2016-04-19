@@ -72,6 +72,13 @@ $titles:									lighten($black, 20%);
 		color: $c-btn-primary;
 		background-color: $white;
 	}
+	&.is-active {
+		color: $c-btn-primary;
+		background-color: $white;
+		& + .styleguide-header__nav {
+			display: block;
+		}
+	}
 }
 .styleguide-header__title{
 	display: inline-block;
@@ -81,6 +88,7 @@ $titles:									lighten($black, 20%);
 }
 .styleguide-header__nav {
 	background-color: $c-nav-fill;
+	display: none;
 }
 
 .styleguide-header__nav-item {
