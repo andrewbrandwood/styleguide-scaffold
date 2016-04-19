@@ -1,6 +1,7 @@
 //Styleguide layout and filler styles.
 
 $c-color-pallet-bg: 			lighten($black, 90%);
+$titles:									lighten($black, 20%);
 
 .styleguide__grid-item {
 	height: remify(50px);
@@ -18,7 +19,8 @@ $c-color-pallet-bg: 			lighten($black, 90%);
 .styleguide__section-title {
 	margin: remify(30px) 0;
 	padding-bottom: remify(10px);
-	border-bottom: 1px solid $black;
+	border-bottom: 1px solid $titles;
+	color: $titles;
 }
 
 .styleguide__btn-section {
@@ -28,34 +30,64 @@ $c-color-pallet-bg: 			lighten($black, 90%);
 }
 
 .color-list {
-	background: $c-color-pallet-bg;
 	padding-left: 1%;
 }
 
 .color-item {
 	display: inline-block;
 	padding: remify(10px);
-	width: 32%;
-
-	@include respond-to-min($med) {
-		width: 24%;
-	}
-
-	@include respond-to-min($large) {
-		width: 12%;
-	}
 }
 
 .color-item__color {
-	border-radius: remify(3px) remify(3px) 0 0;
+	border-radius: 40px 40px 40px 5px;
+	transform: rotate(-45deg);
 	display: block;
 	height: remify(60px);
+	width: remify(60px);
+	margin: 0 auto remify(20px);
+	border: 1px solid $c-color-pallet-bg;
 }
 
 .color-item__title {
-	background: $white;
-	border-radius: 0 0 remify(3px) remify(3px);
 	display: block;
 	padding: remify(10px) remify(5px);
 	width: 100%;
+	text-align: center;
+}
+
+.styleguide-header {
+	background-color: $c-nav-fill;
+}
+
+.styleguide-header__nav-control {
+	border: 1px solid $c-color-pallet-bg;
+	border-radius: remify(5px);
+	padding: remify(10px);
+	background-color: $c-btn-primary;
+	color: $white;
+	position: absolute;
+	right: remify(10px);
+	top: remify(15px);
+	&:hover {
+		color: $c-btn-primary;
+		background-color: $white;
+	}
+}
+.styleguide-header__title{
+	display: inline-block;
+	vertical-align: middle;
+	margin: remify(20px) 0 remify(20px) remify(10px);
+	color: $titles;
+}
+.styleguide-header__nav {
+	background-color: $c-nav-fill;
+}
+
+.styleguide-header__nav-item {
+	display: block;
+	border-left: 5px solid $white;
+	border-bottom: 1px solid $white;
+	padding: remify(20px);
+	color: $c-btn-primary;
+
 }
